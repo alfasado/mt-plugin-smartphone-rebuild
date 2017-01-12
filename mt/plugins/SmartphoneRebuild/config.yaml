@@ -1,0 +1,10 @@
+name: SmartphoneRebuild
+id:   SmartphoneRebuild
+key:  smartphonerebuild
+version: 0.1
+author_name: Alfasado Inc.
+author_link: https://alfasado.net/
+description: <__trans phrase="Re-Initialize plugin at rebuild from mt-sp.cgi. Add 'SmartphonePluginSwitch SmartphoneRebuild=1' to mt-config.cgi.">
+l10n_class: SmartphoneRebuild::L10N
+callbacks:
+    build_file_filter: $smartphonerebuild::SmartphoneRebuild::Callbacks::build_file_filter
